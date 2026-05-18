@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Macro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- TOPO -->
+
+    <header class="macro-topbar">
+
+        <a href="macros.html" class="logo-link">
+
+            <div class="logo-area">
+
+                <div class="logo-circle"></div>
+
+                <div>
+
+                    <h1>Controle de Macros</h1>
+
+                    <p>Painel operacional</p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <a href="macros.html">
+
+            <button class="top-button">
+                Ver Macros
+            </button>
+
+        </a>
+
+    </header>
+
+    <!-- FORMULÁRIO -->
+
+    <section class="macro-page">
+
+        <div class="macro-form">
+
+            <h2>Adicionar Macro</h2>
+
+            <p class="form-text">
+                Preencha as informações abaixo para cadastrar uma nova macro.
+            </p>
+
+            <label>Número da Macro</label>
+
+            <input
+                type="text"
+                id="numeroMacro"
+                placeholder="Digite o número da macro"
+            >
+
+            <label>Equipe Responsável</label>
+
+            <select id="equipeMacro">
+
+                <option value="">
+                    Selecione a equipe
+                </option>
+
+                <option>SRO5414 - LUCAS NEU</option>
+                <option>SRO5501 - PAULO STEINBORN</option>
+                <option>SRO5081 - VANDERLEI PAQUEIRA</option>
+                <option>SRO5839 - SANDRO KUZEY</option>
+                <option>SRO5823 - JOÃO DURÃO</option>
+                <option>SRO5838 - WAGNER ANTUNES</option>
+                <option>SRO5658 - CLEVERSON PAYVA</option>
+                <option>SRO5363 - ELEMAR RATKE</option>
+                <option>SRO5483 - DARCI STEFFAN</option>
+                <option>SRO5761 - ELOI DE MOURA</option>
+                <option>SRO6252 - ALEXANDRE ANCEROWICZ</option>
+                <option>SRO6143 - JOSIAS GODOY</option>
+
+            </select>
+
+            <label>Descrição do Serviço</label>
+
+            <textarea
+                id="descricaoMacro"
+                placeholder="Descreva o serviço executado"
+            ></textarea>
+
+            <button onclick="atribuirMacro()">
+                Salvar Macro
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
