@@ -1,0 +1,195 @@
+const express = require('express');
+
+const cors = require('cors');
+
+const multer = require('multer');
+
+const XLSX = require('xlsx');
+
+const fs = require('fs');
+
+const app = express();
+
+app.use(cors());
+
+app.use(express.json());
+
+/* ===================================== */
+/* UPLOAD */
+/* ===================================== */
+
+const upload = multer({
+
+    dest: 'uploads/'
+
+});
+
+/* ===================================== */
+/* BANCO TEMPORÁRIO */
+/* ===================================== */
+
+let excelLido = {};
+
+let macros = [];
+
+/* ===================================== */
+/* UPLOAD EXCEL */
+/* ===================================== */
+
+app.post(
+
+    '/upload',
+
+    upload.single('arquivo'),
+
+    async (req, res) => {
+
+        try {
+
+            const caminho =
+                req.file.path;
+
+            const workbook =
+                XLSX.readFile(
+                    caminho
+                );
+
+            excelLido = {};
+
+            workbook.SheetNames.forEach(
+
+                (nomeAba) => {
+
+                    const worksheet =
+                        workbook.Sheets[
+                            nomeAba
+                        ];
+
+                    const json =
+                        XLSX.utils.sheet_to_json(
+                            worksheet
+                        );
+
+                    excelLido[nomeAba] =
+                        json;
+
+                }
+
+            );
+
+            fs.unlinkSync(
+                caminho
+            );
+
+            res.json({
+
+                sucesso: true,
+
+                mensagem:
+                    'Excel carregado com sucesso'
+
+            });
+
+        } catch (erro) {
+
+            console.error(
+                erro
+            );
+
+            res.status(500).json({
+
+                erro:
+                    'Erro ao processar Excel'
+
+            });
+
+        }
+
+    }
+
+);
+
+/* ===================================== */
+/* RETORNAR EXCEL */
+/* ===================================== */
+
+app.get(
+
+    '/excel-lido',
+
+    (req, res) => {
+
+        res.json(
+            excelLido
+        );
+
+    }
+
+);
+
+/* ===================================== */
+/* SALVAR MACRO */
+/* ===================================== */
+
+app.post(
+
+    '/macro',
+
+    (req, res) => {
+
+        const macro =
+            req.body;
+
+        macros.push(
+            macro
+        );
+
+        res.json({
+
+            sucesso: true,
+
+            macro
+
+        });
+
+    }
+
+);
+
+/* ===================================== */
+/* LISTAR MACROS */
+/* ===================================== */
+
+app.get(
+
+    '/macros',
+
+    (req, res) => {
+
+        res.json(
+            macros
+        );
+
+    }
+
+);
+
+/* ===================================== */
+/* INICIAR SERVIDOR */
+/* ===================================== */
+
+app.listen(
+
+    3000,
+
+    () => {
+
+        console.log(
+
+            'Servidor rodando na porta 3000'
+
+        );
+
+    }
+
+);

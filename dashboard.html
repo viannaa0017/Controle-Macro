@@ -1,84 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dashboard</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <title>
+        Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
+
 <body>
 
     <div class="container">
 
-        <aside class="sidebar">
+        <h1
+            onclick="voltarDashboard()"
+            class="titulo-click"
+        >
+            Painel Principal
+        </h1>
 
-            <h2>OBRAS</h2>
+        <p>
 
-            <ul>
+            Escolha uma opção abaixo:
 
-                <li>Dashboard</li>
-                <li>Obras</li>
-                <li>Estruturas</li>
-                <li>Postes</li>
-                <li>Macros</li>
-                <li>Notas Fiscais</li>
-                <li>Relatórios</li>
+        </p>
 
-            </ul>
+        <div class="menu-grid">
 
-        </aside>
+            <a href="macros.html">
 
-        <main class="main-content">
+                <button class="btn btn-upload">
 
-            <header class="topbar">
+                    Ver Macros
 
-                <h1>Painel Principal</h1>
+                </button>
 
-            </header>
+            </a>
 
-            <section class="cards">
+            <a href="nova-macro.html">
 
-                <div class="card">
+                <button class="btn btn-upload">
 
-                    <h3>Obras Ativas</h3>
+                    Nova Macro
 
-                    <span>12</span>
+                </button>
 
-                </div>
+            </a>
 
-                <div class="card">
+            <a href="excel.html">
 
-                    <h3>Macros Realizadas</h3>
+                <button class="btn btn-upload">
 
-                    <span>58</span>
+                    Banco de Excel
 
-                </div>
+                </button>
 
-                <div class="card">
+            </a>
 
-                    <h3>Equipes em Campo</h3>
-
-                    <span>8</span>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>Produção Diária</h3>
-
-                    <span>94%</span>
-
-                </div>
-
-            </section>
-
-        </main>
+        </div>
 
     </div>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

@@ -1,510 +1,689 @@
-*{
+/* ===================================== */
+/* RESET */
+/* ===================================== */
+
+* {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
 
-body{
+/* ===================================== */
+/* BODY */
+/* ===================================== */
 
-    font-family: 'Poppins', sans-serif;
-    background: #071120;
-    color: white;
+body {
+
+    min-height: 100vh;
+
+    font-family:
+
+        'Segoe UI',
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at top left,
+            #1e293b,
+            #0f172a 45%,
+            #020617 100%
+        );
+
+    color: #f8fafc;
+
     overflow-x: hidden;
 
+    position: relative;
+
 }
 
-/* FUNDO */
+/* ===================================== */
+/* EFEITO FUNDO */
+/* ===================================== */
 
-.background-blur{
+body::before {
 
-    position: absolute;
+    content: '';
+
+    position: fixed;
+
+    width: 700px;
+
+    height: 700px;
+
+    background:
+
+        rgba(59,130,246,0.12);
+
     border-radius: 50%;
+
+    top: -200px;
+
+    right: -200px;
+
     filter: blur(120px);
+
     z-index: 0;
 
 }
 
-.blur1{
+body::after {
 
-    width: 350px;
-    height: 350px;
-    background: #2563eb;
-    top: 50px;
-    left: 80px;
+    content: '';
+
+    position: fixed;
+
+    width: 500px;
+
+    height: 500px;
+
+    background:
+
+        rgba(168,85,247,0.12);
+
+    border-radius: 50%;
+
+    bottom: -150px;
+
+    left: -150px;
+
+    filter: blur(120px);
+
+    z-index: 0;
 
 }
 
-.blur2{
+/* ===================================== */
+/* CONTAINER */
+/* ===================================== */
 
-    width: 300px;
-    height: 300px;
-    background: #7c3aed;
-    bottom: 50px;
-    right: 100px;
-
-}
-
-/* INTRO */
-
-.intro-section{
+.container {
 
     position: relative;
-    width: 100%;
-    height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
 
-    padding: 30px;
+    width: 92%;
 
-}
+    max-width: 1250px;
 
-.intro-card{
+    margin: 40px auto;
 
-    position: relative;
-    z-index: 2;
+    padding: 40px;
 
-    width: 650px;
+    border-radius: 28px;
 
-    padding: 60px;
+    background:
 
-    text-align: center;
+        rgba(15,23,42,0.72);
 
-    border-radius: 30px;
+    backdrop-filter: blur(18px);
 
-    background: rgba(17, 24, 39, 0.8);
+    border:
 
-    border: 1px solid rgba(255,255,255,0.08);
+        1px solid rgba(255,255,255,0.08);
 
-    backdrop-filter: blur(15px);
+    box-shadow:
 
-    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+        0 15px 45px rgba(0,0,0,0.45);
 
 }
 
-.tag{
+/* ===================================== */
+/* TITULOS */
+/* ===================================== */
 
-    display: inline-block;
+h1 {
 
-    padding: 10px 18px;
+    font-size: 42px;
 
-    border-radius: 50px;
+    font-weight: 700;
 
-    background: rgba(37, 99, 235, 0.2);
+    margin-bottom: 18px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a855f7
+        );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+h2 {
 
     color: #93c5fd;
 
-    font-size: 14px;
-
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
 }
 
-.intro-card h1{
+/* ===================================== */
+/* TEXTO */
+/* ===================================== */
 
-    font-size: 55px;
-
-    line-height: 1.1;
-
-    margin-bottom: 25px;
-
-}
-
-.intro-card p{
+p {
 
     color: #cbd5e1;
 
-    line-height: 1.8;
+    line-height: 1.7;
 
-    font-size: 17px;
-
-    margin-bottom: 40px;
-
-}
-
-a{
-
-    text-decoration: none;
-
-}
-
-/* BOTÕES */
-
-button{
-
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.intro-card button,
-.top-button,
-.macro-form button{
-
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-
-    color: white;
-
-    font-weight: 600;
-
-    box-shadow: 0 10px 30px rgba(37,99,235,0.3);
-
-}
-
-.intro-card button{
-
-    width: 100%;
-
-    padding: 18px;
-
-    border-radius: 16px;
-
-    font-size: 16px;
-
-}
-
-.top-button{
-
-    padding: 15px 24px;
-
-    border-radius: 14px;
+    margin-bottom: 16px;
 
     font-size: 15px;
 
 }
 
-.macro-form button{
+/* ===================================== */
+/* MENU */
+/* ===================================== */
 
-    width: 100%;
+.menu-grid {
 
-    padding: 18px;
+    display: grid;
 
-    border-radius: 16px;
+    grid-template-columns:
 
-    font-size: 16px;
+        repeat(auto-fit, minmax(230px, 1fr));
 
-}
+    gap: 20px;
 
-button:hover{
-
-    transform: translateY(-3px);
-
-}
-
-/* TOPO */
-
-.macro-topbar{
-
-    width: 100%;
-    height: 95px;
-
-    padding: 0 40px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: rgba(15,23,42,0.8);
-
-    backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 100;
+    margin-top: 35px;
 
 }
 
-.logo-area{
+/* ===================================== */
+/* INPUTS */
+/* ===================================== */
 
-    display: flex;
-    align-items: center;
-    gap: 15px;
+input,
 
-}
+textarea,
 
-.logo-circle{
-
-    width: 50px;
-    height: 50px;
-
-    border-radius: 15px;
-
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-
-}
-
-.logo-area h1{
-
-    font-size: 22px;
-
-}
-
-.logo-area p{
-
-    color: #94a3b8;
-    font-size: 14px;
-
-}
-
-/* PÁGINAS */
-
-.macro-page{
-
-    width: 95%;
-    max-width: 1400px;
-
-    margin: 40px auto;
-
-}
-
-/* FORM */
-
-.macro-form{
-
-    width: 100%;
-    max-width: 600px;
-
-    margin: auto;
-
-    background: rgba(17, 24, 39, 0.9);
-
-    border: 1px solid rgba(255,255,255,0.06);
-
-    border-radius: 28px;
-
-    padding: 40px;
-
-    backdrop-filter: blur(12px);
-
-}
-
-.macro-form h2{
-
-    font-size: 32px;
-    margin-bottom: 10px;
-
-}
-
-.form-text{
-
-    color: #94a3b8;
-
-    margin-bottom: 30px;
-
-    line-height: 1.6;
-
-}
-
-.macro-form label{
-
-    display: block;
-
-    margin-bottom: 12px;
-    margin-top: 18px;
-
-    color: #e2e8f0;
-
-}
-
-.macro-form input,
-.macro-form select,
-.macro-form textarea{
+select {
 
     width: 100%;
 
     padding: 16px;
 
-    border-radius: 14px;
+    border-radius: 18px;
 
-    border: 1px solid rgba(255,255,255,0.06);
+    border:
 
-    background: #0f172a;
+        1px solid rgba(255,255,255,0.08);
+
+    background:
+
+        rgba(255,255,255,0.05);
 
     color: white;
 
     font-size: 15px;
 
+    margin-top: 12px;
+
+    margin-bottom: 22px;
+
     outline: none;
 
-}
-
-.macro-form textarea{
-
-    height: 140px;
-
-    resize: none;
-
-    margin-bottom: 25px;
+    transition: 0.3s;
 
 }
 
-/* LISTA */
+/* ===================================== */
 
-.macro-list-container{
+input::placeholder,
 
-    background: rgba(17, 24, 39, 0.9);
-
-    border: 1px solid rgba(255,255,255,0.06);
-
-    border-radius: 30px;
-
-    padding: 35px;
-
-}
-
-.macro-list-header{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 35px;
-
-}
-
-.macro-list-header h2{
-
-    font-size: 30px;
-    margin-bottom: 8px;
-
-}
-
-.macro-list-header p{
+textarea::placeholder {
 
     color: #94a3b8;
 
 }
 
-.macro-list-header span{
+/* ===================================== */
 
-    padding: 12px 18px;
+select option {
 
-    border-radius: 14px;
+    background: #0f172a;
 
-    background: rgba(37,99,235,0.15);
-
-    color: #93c5fd;
+    color: white;
 
 }
 
-/* MACRO */
+/* ===================================== */
 
-.macro-item{
+input:focus,
 
-    background: linear-gradient(
-        135deg,
-        rgba(37,99,235,0.12),
-        rgba(124,58,237,0.10)
-    );
+textarea:focus,
 
-    border: 1px solid rgba(255,255,255,0.06);
+select:focus {
 
-    border-radius: 24px;
+    border:
 
-    margin-bottom: 25px;
+        1px solid #60a5fa;
+
+    box-shadow:
+
+        0 0 20px rgba(96,165,250,0.25);
+
+    background:
+
+        rgba(255,255,255,0.08);
+
+}
+
+/* ===================================== */
+
+textarea {
+
+    min-height: 170px;
+
+    resize: vertical;
+
+}
+
+/* ===================================== */
+/* BOTÕES */
+/* ===================================== */
+
+.btn {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 16px 20px;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    position: relative;
 
     overflow: hidden;
 
 }
 
-.macro-header{
+/* ===================================== */
 
-    padding: 25px 30px;
+.btn::before {
+
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.25),
+            transparent
+        );
+
+    top: 0;
+
+    left: -100%;
+
+    transition: 0.5s;
+
+}
+
+/* ===================================== */
+
+.btn:hover::before {
+
+    left: 100%;
+
+}
+
+/* ===================================== */
+
+.btn:hover {
+
+    transform:
+
+        translateY(-4px);
+
+}
+
+/* ===================================== */
+/* BOTÃO PRINCIPAL */
+/* ===================================== */
+
+.btn-upload {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    box-shadow:
+
+        0 10px 25px rgba(59,130,246,0.35);
+
+}
+
+/* ===================================== */
+/* BOTÃO DELETE */
+/* ===================================== */
+
+.btn-delete {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ef4444,
+            #b91c1c
+        );
+
+    color: white;
+
+}
+
+/* ===================================== */
+/* CARDS */
+/* ===================================== */
+
+.macro-card,
+
+.arquivo {
+
+    background:
+
+        rgba(255,255,255,0.04);
+
+    border:
+
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 24px;
+
+    margin-top: 24px;
+
+    transition: 0.3s;
+
+    backdrop-filter: blur(10px);
+
+}
+
+/* ===================================== */
+
+.macro-card:hover,
+
+.arquivo:hover {
+
+    transform:
+
+        translateY(-6px);
+
+    border:
+
+        1px solid rgba(96,165,250,0.4);
+
+    box-shadow:
+
+        0 15px 30px rgba(0,0,0,0.3);
+
+}
+
+/* ===================================== */
+
+.macro-card h3 {
+
+    color: #60a5fa;
+
+    margin-bottom: 12px;
+
+}
+
+/* ===================================== */
+
+.arquivo {
 
     display: flex;
+
     justify-content: space-between;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ===================================== */
+/* LABELS */
+/* ===================================== */
+
+label {
+
+    font-weight: 600;
+
+    color: #e2e8f0;
+
+}
+
+/* ===================================== */
+/* LINKS */
+/* ===================================== */
+
+a {
+
+    text-decoration: none;
+
+}
+
+/* ===================================== */
+/* SCROLL */
+/* ===================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #0f172a;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+
+        linear-gradient(
+            #2563eb,
+            #7c3aed
+        );
+
+    border-radius: 20px;
+
+}
+
+/* ===================================== */
+/* RESPONSIVO */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        width: 96%;
+
+        padding: 24px;
+
+    }
+
+    h1 {
+
+        font-size: 32px;
+
+    }
+
+    .arquivo {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+}
+
+/* ===================================== */
+/* AÇÕES MACRO */
+/* ===================================== */
+
+.macro-card {
+
+    position: relative;
+
+}
+
+/* ===================================== */
+
+.macro-actions {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 18px;
+
+}
+
+/* ===================================== */
+
+.btn-delete-mini {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+
+        rgba(239,68,68,0.15);
+
+    color: #ef4444;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+/* ===================================== */
+
+.btn-delete-mini:hover {
+
+    background:
+
+        rgba(239,68,68,0.25);
+
+    transform: scale(1.08);
+
+}
+
+/* ===================================== */
+/* EXCEL EXPANSÍVEL */
+/* ===================================== */
+
+.excel-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
     align-items: center;
 
     cursor: pointer;
 
-}
+    user-select: none;
 
-.macro-header:hover{
-
-    background: rgba(255,255,255,0.03);
+    padding-bottom: 10px;
 
 }
 
-.macro-header h3{
+.excel-header span {
 
-    font-size: 22px;
+    font-size: 18px;
 
-}
+    color: #60a5fa;
 
-.expand-icon{
-
-    font-size: 22px;
-    color: #93c5fd;
+    transition: 0.3s;
 
 }
 
-.macro-details{
-
-    padding: 0 30px 30px 30px;
-
-    border-top: 1px solid rgba(255,255,255,0.06);
-
-}
-
-.macro-details p{
-
-    margin-top: 18px;
-
-    color: #cbd5e1;
-
-    line-height: 1.8;
-
-}
-
-/* EXCLUIR */
-
-.delete-button{
-
-    margin-top: 25px;
-
-    padding: 14px 20px;
-
-    border-radius: 14px;
-
-    background: linear-gradient(135deg, #dc2626, #ef4444);
-
-    color: white;
-
-    font-weight: 600;
-
-}
-
-.delete-button:hover{
-
-    transform: translateY(-2px);
-
-}
-
-/* ESCONDER */
-
-.hidden{
+.excel-content {
 
     display: none;
 
-}
-
-.logo-link{
-
-    text-decoration: none;
-
-    color: white;
+    margin-top: 20px;
 
 }
 
-.logo-link:hover{
+/* ===================================== */
+/* TÍTULO CLICÁVEL */
+/* ===================================== */
+
+.titulo-click {
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.titulo-click:hover {
+
+    transform: scale(1.01);
 
     opacity: 0.9;
 
 }
+

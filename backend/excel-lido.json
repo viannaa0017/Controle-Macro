@@ -1,0 +1,918 @@
+{
+    "Tab_Serviços": [
+        {
+            "atividade": "Poda árvore urbana ou rural sem remoção",
+            "qtdeUS": 0.1778
+        },
+        {
+            "atividade": "Corte árvore grande urbano ou rural sem remoção",
+            "qtdeUS": 0.4166
+        },
+        {
+            "atividade": "Corte árvore peq./méd. urbano ou rural sem remoção",
+            "qtdeUS": 0.233
+        },
+        {
+            "atividade": "Desmatamento, aceiro, roçada, corte de bambú e árvores especiais c/ remoção",
+            "qtdeUS": 0.0495
+        },
+        {
+            "atividade": "Desmatamento, aceiro, roçada, corte de bambú e árvores especiais s/ remoção",
+            "qtdeUS": 0.0238
+        },
+        {
+            "atividade": "Remoção, transporte, despejo de vegetação",
+            "qtdeUS": 0.0385
+        },
+        {
+            "atividade": "Remoção, transporte, despejo de vegetação",
+            "qtdeUS": 0.1271
+        },
+        {
+            "atividade": "Aterramento e seccionamento de cerca",
+            "qtdeUS": 0.9917
+        },
+        {
+            "atividade": "Aterramento de cerca ( somente aterrar)",
+            "qtdeUS": 0.595
+        },
+        {
+            "atividade": "Aterramento de cerca ( somente seccionar)",
+            "qtdeUS": 0.3967
+        },
+        {
+            "atividade": "Aterramento de rede /equipamento",
+            "qtdeUS": 1.7469
+        },
+        {
+            "atividade": "Medir linha terra / aterram.",
+            "qtdeUS": 0.595
+        },
+        {
+            "atividade": "Estrutura para chave faca / fusível / repetidora",
+            "qtdeUS": 2.2233
+        },
+        {
+            "atividade": "Estrutura para chave tripolar",
+            "qtdeUS": 4.086
+        },
+        {
+            "atividade": "Estrutura para equipamento automatizado",
+            "qtdeUS": 5.1075
+        },
+        {
+            "atividade": "Chave By - Pass",
+            "qtdeUS": 1.0164
+        },
+        {
+            "atividade": "Chave faca / fusível / repetidora",
+            "qtdeUS": 0.8893
+        },
+        {
+            "atividade": "Estrutura Monofásica para chave faca / fusível / Repetidora",
+            "qtdeUS": 0.667
+        },
+        {
+            "atividade": "Condutor comum",
+            "qtdeUS": 0.0121
+        },
+        {
+            "atividade": "Tracionar / encabeçar",
+            "qtdeUS": 0.3176
+        },
+        {
+            "atividade": "Tracionar / encabeçar (Manutenção)",
+            "qtdeUS": 0.1588
+        },
+        {
+            "atividade": "Conexão",
+            "qtdeUS": 0.1906
+        },
+        {
+            "atividade": "Jumper (abrir ou fechar)",
+            "qtdeUS": 0.3811
+        },
+        {
+            "atividade": "Emenda condutor comum",
+            "qtdeUS": 0.2223
+        },
+        {
+            "atividade": "Amarração",
+            "qtdeUS": 0.1588
+        },
+        {
+            "atividade": "Flying Tap",
+            "qtdeUS": 0.5717
+        },
+        {
+            "atividade": "Ligação do transformador a rede comum",
+            "qtdeUS": 0.2541
+        },
+        {
+            "atividade": "Espaçador rede / afastador tirante / Esfera sinalização",
+            "qtdeUS": 0.2223
+        },
+        {
+            "atividade": "Objeto na rede",
+            "qtdeUS": 0.1906
+        },
+        {
+            "atividade": "Esfera de sinalização com seccionamento rede",
+            "qtdeUS": 0.667
+        },
+        {
+            "atividade": "Estrutura para regulador de tensão (com equipamento)",
+            "qtdeUS": 12.7013
+        },
+        {
+            "atividade": "Estrutura para banco capacitores",
+            "qtdeUS": 10.0025
+        },
+        {
+            "atividade": "Equipamentos (substituir)",
+            "qtdeUS": 2.5537
+        },
+        {
+            "atividade": "Conjunto de medição externa",
+            "qtdeUS": 4.4251
+        },
+        {
+            "atividade": "Componentes equip. especiais",
+            "qtdeUS": 1.0908
+        },
+        {
+            "atividade": "Mostrador Externo (acessórios)",
+            "qtdeUS": 0.9917
+        },
+        {
+            "atividade": "Estrutura de estação transformadora",
+            "qtdeUS": 4.5967
+        },
+        {
+            "atividade": "Padronizar fixação do transformador",
+            "qtdeUS": 2.3044
+        },
+        {
+            "atividade": "Transformador (equipamento)",
+            "qtdeUS": 3.5752
+        },
+        {
+            "atividade": "Alterar TAP de transformador",
+            "qtdeUS": 0.6352
+        },
+        {
+            "atividade": "Estrutura primária (condutor comum)",
+            "qtdeUS": 1.5881
+        },
+        {
+            "atividade": "Estrutura primária (condutor multiplexado)",
+            "qtdeUS": 0.5717
+        },
+        {
+            "atividade": "Estrutura secundária (condutor comum)",
+            "qtdeUS": 0.7623
+        },
+        {
+            "atividade": "Estrutura secundária (condutor multiplexado)",
+            "qtdeUS": 0.5336
+        },
+        {
+            "atividade": "Estrutura primária para circuito monofásico (condutor comum)",
+            "qtdeUS": 0.4764
+        },
+        {
+            "atividade": "Conjunto de iluminação pública completo",
+            "qtdeUS": 1.7469
+        },
+        {
+            "atividade": "Isolador",
+            "qtdeUS": 0.3494
+        },
+        {
+            "atividade": "Ramal de ligação",
+            "qtdeUS": 0.357
+        },
+        {
+            "atividade": "Padrão universalizado",
+            "qtdeUS": 1.1507
+        },
+        {
+            "atividade": "Kit interno do padrão universalizado",
+            "qtdeUS": 1.1268
+        },
+        {
+            "atividade": "Medidor grupo B - Área Rural",
+            "qtdeUS": 0.58
+        },
+        {
+            "atividade": "Medidor grupo B - Área Urbana",
+            "qtdeUS": 0.47
+        },
+        {
+            "atividade": "Para-raios",
+            "qtdeUS": 1.2704
+        },
+        {
+            "atividade": "Poste",
+            "qtdeUS": 3.8633
+        },
+        {
+            "atividade": "Numerar posto ou equipamento (n° operativo ou n° equip.)",
+            "qtdeUS": 0.119
+        },
+        {
+            "atividade": "Concretar base",
+            "qtdeUS": 3.14
+        },
+        {
+            "atividade": "Aprumar/Estabilizar/Apiloar",
+            "qtdeUS": 0.9602
+        },
+        {
+            "atividade": "Abertura de cava em rocha - Expl.",
+            "qtdeUS": 22.0699
+        },
+        {
+            "atividade": "Abertura de cava em rocha - Mec",
+            "qtdeUS": 22.0699
+        },
+        {
+            "atividade": "Quebrar / refazer passeio simples",
+            "qtdeUS": 0.77
+        },
+        {
+            "atividade": "Quebrar e refazer passeio especial",
+            "qtdeUS": 1.43
+        },
+        {
+            "atividade": "Estai",
+            "qtdeUS": 1.2704
+        },
+        {
+            "atividade": "Retirar abelhas / insetos",
+            "qtdeUS": 0.794
+        },
+        {
+            "atividade": "Remanejo de Linhas Telefônicas, TV a Cabo ou Outros - por poste",
+            "qtdeUS": 0.5717
+        },
+        {
+            "atividade": "Abertura de cava em solo rochoso",
+            "qtdeUS": 12.5
+        },
+        {
+            "atividade": "Poste de fibra",
+            "qtdeUS": 7.9166
+        },
+        {
+            "atividade": "Defensa",
+            "qtdeUS": 37.1735
+        },
+        {
+            "atividade": "Condutor multiplexado",
+            "qtdeUS": 0.0196
+        },
+        {
+            "atividade": "Tracionar / encabeçar condutor multiplexado",
+            "qtdeUS": 0.6352
+        },
+        {
+            "atividade": "Emenda primária condutor isolado",
+            "qtdeUS": 2.5409
+        },
+        {
+            "atividade": "Emenda secundária condutor multiplexado",
+            "qtdeUS": 0.6352
+        },
+        {
+            "atividade": "Terminal termo-contrátil ou contrátil frio condutor prim. Isolado",
+            "qtdeUS": 1.5881
+        },
+        {
+            "atividade": "Flying tap secundário condutor multiplexado",
+            "qtdeUS": 1.9057
+        },
+        {
+            "atividade": "Seccionar cabo multiplexados secundário",
+            "qtdeUS": 0.6352
+        },
+        {
+            "atividade": "Interligar cabo multiplexado ao transformador",
+            "qtdeUS": 0.9528
+        },
+        {
+            "atividade": "Rabichos",
+            "qtdeUS": 0.2541
+        },
+        {
+            "atividade": "Conexão tipo perfuração",
+            "qtdeUS": 0.1588
+        },
+        {
+            "atividade": "Estrutura primária",
+            "qtdeUS": 1.1116
+        },
+        {
+            "atividade": "Estrutura p/ chave faca / fusível (com chaves)",
+            "qtdeUS": 2.2233
+        },
+        {
+            "atividade": "Espaçador para rede compacta",
+            "qtdeUS": 0.2541
+        },
+        {
+            "atividade": "Condutor",
+            "qtdeUS": 0.0171
+        },
+        {
+            "atividade": "Conexão (cabo protegido)",
+            "qtdeUS": 0.5399
+        },
+        {
+            "atividade": "Encabeçar cabo protegido",
+            "qtdeUS": 0.1906
+        },
+        {
+            "atividade": "Tracionar / encabeçar (mensageiro)",
+            "qtdeUS": 0.3176
+        },
+        {
+            "atividade": "Flying tap",
+            "qtdeUS": 0.6352
+        },
+        {
+            "atividade": "Fasear / rotacionar circuito primário",
+            "qtdeUS": 3.4214
+        },
+        {
+            "atividade": "Inspeção e reaperto geral estrutura primária",
+            "qtdeUS": 1.9551
+        },
+        {
+            "atividade": "Estrutura primaria",
+            "qtdeUS": 3.4214
+        },
+        {
+            "atividade": "Estrutura p/ chave faca / fusível",
+            "qtdeUS": 4.1057
+        },
+        {
+            "atividade": "Estrutura c/ equipamento",
+            "qtdeUS": 6.5997
+        },
+        {
+            "atividade": "Estrutura equipamento automatizado",
+            "qtdeUS": 8.7996
+        },
+        {
+            "atividade": "Modificar estrutura primária",
+            "qtdeUS": 4.1643
+        },
+        {
+            "atividade": "Aprumar poste",
+            "qtdeUS": 2.9332
+        },
+        {
+            "atividade": "Poste",
+            "qtdeUS": 6.2625
+        },
+        {
+            "atividade": "Poda árvore (sem remoção)",
+            "qtdeUS": 0.9775
+        },
+        {
+            "atividade": "Emenda condutor",
+            "qtdeUS": 0.9775
+        },
+        {
+            "atividade": "Jumpe / Flying TAP (abrir e fechar)",
+            "qtdeUS": 1.7009
+        },
+        {
+            "atividade": "Estai",
+            "qtdeUS": 1.4663
+        },
+        {
+            "atividade": "Para-raios",
+            "qtdeUS": 2.1995
+        },
+        {
+            "atividade": "Isolador / amarração",
+            "qtdeUS": 1.1731
+        },
+        {
+            "atividade": "Conexão",
+            "qtdeUS": 0.9775
+        },
+        {
+            "atividade": "Utilização Big Jumper",
+            "qtdeUS": 40.393
+        },
+        {
+            "atividade": "Chave fusível / faca / repetidora (equipamento)",
+            "qtdeUS": 2.0666
+        },
+        {
+            "atividade": "Chave fusível / faca / repetidora (equipamento)",
+            "qtdeUS": 3.0793
+        },
+        {
+            "atividade": "Chave tripolar / regulador de tensão / religador / seccionalizador / unidades capacitativas / medição externa ( equip.)",
+            "qtdeUS": 6.5997
+        },
+        {
+            "atividade": "Condutores ligação do transf. / chaves à rd MT c/ protetor de bucha",
+            "qtdeUS": 3.7575
+        },
+        {
+            "atividade": "Chave By-Pass",
+            "qtdeUS": 2.3616
+        },
+        {
+            "atividade": "Esfera de sinalização com seccionamento do condutor",
+            "qtdeUS": 2.9326
+        },
+        {
+            "atividade": "Espaçador / separador",
+            "qtdeUS": 0.4399
+        },
+        {
+            "atividade": "Utilização de Grupo Gerador",
+            "qtdeUS": 12.322
+        },
+        {
+            "atividade": "Utilização de dispositivo de elevaçao",
+            "qtdeUS": 3.1446
+        },
+        {
+            "atividade": "Projeto de Rede Distribuição - P1",
+            "qtdeUS": 0.7916
+        },
+        {
+            "atividade": "Projeto de Rede Distribuição - P2",
+            "qtdeUS": 0.6003
+        },
+        {
+            "atividade": "Projeto de Rede Distribuição - P3",
+            "qtdeUS": 0.3842
+        },
+        {
+            "atividade": "Projeto de Rede Distribuição - P4",
+            "qtdeUS": 0.5755
+        },
+        {
+            "atividade": "Manobras de chaves e equipamentos",
+            "qtdeUS": 0.5128
+        },
+        {
+            "atividade": "Cabo Armado",
+            "qtdeUS": 0.144
+        },
+        {
+            "atividade": "Caixa derivação cliente ou caixa de blindagem barramento de trafo",
+            "qtdeUS": 1.1028
+        },
+        {
+            "atividade": "Caixa de blindagem da rede",
+            "qtdeUS": 2.1138
+        },
+        {
+            "atividade": "Ramal de ligação Concêntrico",
+            "qtdeUS": 0.4998
+        }
+    ],
+    "Tab_Serviços Emergenciais": [
+        {
+            "atividade": "Poda árvore urbana ou rural (sem remoção)",
+            "qtdeUS": 0.2723
+        },
+        {
+            "atividade": "Corte árvore grande urbana ou rural (sem remoção)",
+            "qtdeUS": 0.6381
+        },
+        {
+            "atividade": "Corte árvore peq./méd. urbana ou rural (sem rem.)",
+            "qtdeUS": 0.3568
+        },
+        {
+            "atividade": "Desmatamento, aceiro, roçada, corte de bambú e árv.\r\nesp. c/ remoção",
+            "qtdeUS": 0.0758
+        },
+        {
+            "atividade": "Desmatamento, aceiro, roçada, corte de bambú e árv.\r\nesp c/ remoção",
+            "qtdeUS": 0.0364
+        },
+        {
+            "atividade": "Aterramento e seccionamento de cerca",
+            "qtdeUS": 1.5187
+        },
+        {
+            "atividade": "Aterramento de cerca ( somente aterrar)",
+            "qtdeUS": 0.9112
+        },
+        {
+            "atividade": "Aterramento de cerca ( somente seccionar)",
+            "qtdeUS": 0.6075
+        },
+        {
+            "atividade": "Aterramento de rede /equipamento",
+            "qtdeUS": 2.8973
+        },
+        {
+            "atividade": "Chave By - Pass",
+            "qtdeUS": 2.1071
+        },
+        {
+            "atividade": "Chave faca / fusível / repetidora",
+            "qtdeUS": 1.8437
+        },
+        {
+            "atividade": "Estr. Monofásica para chave faca / fusível / Repetidora",
+            "qtdeUS": 1.2643
+        },
+        {
+            "atividade": "Condutor comum",
+            "qtdeUS": 0.0184
+        },
+        {
+            "atividade": "Tracionar / encabeçar",
+            "qtdeUS": 0.5268
+        },
+        {
+            "atividade": "Tracionar / encabeçar (Manutenção)",
+            "qtdeUS": 0.2634
+        },
+        {
+            "atividade": "Conexão",
+            "qtdeUS": 0.3161
+        },
+        {
+            "atividade": "Jumper (abrir ou fechar)",
+            "qtdeUS": 0.6321
+        },
+        {
+            "atividade": "Emenda condutor comum",
+            "qtdeUS": 0.3687
+        },
+        {
+            "atividade": "Emendas condutor BT e MT",
+            "qtdeUS": 6.8235
+        },
+        {
+            "atividade": "Amarração",
+            "qtdeUS": 0.2634
+        },
+        {
+            "atividade": "Flying Tap",
+            "qtdeUS": 1.1589
+        },
+        {
+            "atividade": "Ligação do transformador a rede comum",
+            "qtdeUS": 0.4741
+        },
+        {
+            "atividade": "Espaçador rede / afastador tirante / Esfera de sinalização",
+            "qtdeUS": 0.3687
+        },
+        {
+            "atividade": "Objeto na rede",
+            "qtdeUS": 0.3161
+        },
+        {
+            "atividade": "Esfera de sinalização com seccionamento rede",
+            "qtdeUS": 1.1062
+        },
+        {
+            "atividade": "Equipamento Emergencial",
+            "qtdeUS": 9.8892
+        },
+        {
+            "atividade": "Estrutura primária (condutor comum)",
+            "qtdeUS": 3.1606
+        },
+        {
+            "atividade": "Estrutura primária (condutor multiplexado)",
+            "qtdeUS": 1.1589
+        },
+        {
+            "atividade": "Estrutura secundária (condutor comum)",
+            "qtdeUS": 1.4223
+        },
+        {
+            "atividade": "Estrutura secundária (condutor multiplexado)",
+            "qtdeUS": 0.9956
+        },
+        {
+            "atividade": "Estrutura primária para circuito monofásico (condutor\r\ncomum)",
+            "qtdeUS": 0.9482
+        },
+        {
+            "atividade": "Conjunto de iluminação pública",
+            "qtdeUS": 3.424
+        },
+        {
+            "atividade": "Isolador",
+            "qtdeUS": 0.6321
+        },
+        {
+            "atividade": "Ramal de ligação",
+            "qtdeUS": 0.6075
+        },
+        {
+            "atividade": "Padrão universalizado",
+            "qtdeUS": 1.8154
+        },
+        {
+            "atividade": "Kit interno do padrão universalizado",
+            "qtdeUS": 1.7257
+        },
+        {
+            "atividade": "Para-raios",
+            "qtdeUS": 2.1071
+        },
+        {
+            "atividade": "Abertura de cava em rocha - Expl.",
+            "qtdeUS": 22.0699
+        },
+        {
+            "atividade": "Abertura de cava em rocha - Mec",
+            "qtdeUS": 22.0699
+        },
+        {
+            "atividade": "Estai",
+            "qtdeUS": 2.1071
+        },
+        {
+            "atividade": "Remanejo de Linhas Telefônicas, TV a Cabo ou Outros,\r\npor poste",
+            "qtdeUS": 0.9482
+        },
+        {
+            "atividade": "Abertura de cava em solo rochoso",
+            "qtdeUS": 12.5
+        },
+        {
+            "atividade": "Poste primário",
+            "qtdeUS": 14.2199
+        },
+        {
+            "atividade": "Poste primário com equipamento",
+            "qtdeUS": 17.9301
+        },
+        {
+            "atividade": "Poste secundário",
+            "qtdeUS": 9.3619
+        },
+        {
+            "atividade": "Instalação de tala ou aprumar poste",
+            "qtdeUS": 6.141
+        },
+        {
+            "atividade": "Condutor multiplexado",
+            "qtdeUS": 0.0297
+        },
+        {
+            "atividade": "Tracionar / encabeçar condutor multiplexado",
+            "qtdeUS": 1.0535
+        },
+        {
+            "atividade": "Emenda primária condutor isolado",
+            "qtdeUS": 4.6355
+        },
+        {
+            "atividade": "Emenda secundária condutor multiplexado",
+            "qtdeUS": 1.1589
+        },
+        {
+            "atividade": "Terminal termo-contrátil ou contrátil frio condutor\r\nprim. Isolado",
+            "qtdeUS": 3.1606
+        },
+        {
+            "atividade": "Flying tap secundário condutor multiplexado",
+            "qtdeUS": 3.6874
+        },
+        {
+            "atividade": "Seccionar cabo multipl. sec.",
+            "qtdeUS": 1.0535
+        },
+        {
+            "atividade": "Interligar cabo multiplexado ao transformador",
+            "qtdeUS": 1.8437
+        },
+        {
+            "atividade": "Rabichos",
+            "qtdeUS": 0.5268
+        },
+        {
+            "atividade": "Conexão tipo perfuração",
+            "qtdeUS": 0.3161
+        },
+        {
+            "atividade": "Estrutura primária",
+            "qtdeUS": 2.1071
+        },
+        {
+            "atividade": "Estrutura p/ chave faca / fusível (com chaves)",
+            "qtdeUS": 4.2142
+        },
+        {
+            "atividade": "Espaçador para rede compacta",
+            "qtdeUS": 0.4741
+        },
+        {
+            "atividade": "Condutor",
+            "qtdeUS": 0.0259
+        },
+        {
+            "atividade": "Conexão cabo protegido",
+            "qtdeUS": 1.0009
+        },
+        {
+            "atividade": "Encabeçar cabo protegido",
+            "qtdeUS": 0.3161
+        },
+        {
+            "atividade": "Tracionar / encabeçar (mensageiro)",
+            "qtdeUS": 0.5268
+        },
+        {
+            "atividade": "Flying tap",
+            "qtdeUS": 1.1589
+        },
+        {
+            "atividade": "Fasear / rotacionar circuito primário",
+            "qtdeUS": 5.6336
+        },
+        {
+            "atividade": "Inspeção e reaperto geral estrutura primária",
+            "qtdeUS": 3.2192
+        },
+        {
+            "atividade": "Estrutura primaria",
+            "qtdeUS": 7.5893
+        },
+        {
+            "atividade": "Estrutura p/ chave faca / fusível",
+            "qtdeUS": 7.7338
+        },
+        {
+            "atividade": "Estrutura c/ equipamento",
+            "qtdeUS": 12.3167
+        },
+        {
+            "atividade": "Estrutura chave tripolar automatizada",
+            "qtdeUS": 17.2434
+        },
+        {
+            "atividade": "Modificar estrutura primária",
+            "qtdeUS": 6.8569
+        },
+        {
+            "atividade": "Aprumar poste",
+            "qtdeUS": 4.9267
+        },
+        {
+            "atividade": "Poda árvore (sem remoção)",
+            "qtdeUS": 1.6096
+        },
+        {
+            "atividade": "Emenda condutor",
+            "qtdeUS": 2.012
+        },
+        {
+            "atividade": "Jumper / flying tap (Abrir ou fechar)",
+            "qtdeUS": 2.8007
+        },
+        {
+            "atividade": "Estai",
+            "qtdeUS": 2.8007
+        },
+        {
+            "atividade": "Para-raios",
+            "qtdeUS": 4.0079
+        },
+        {
+            "atividade": "Isolador / amarração",
+            "qtdeUS": 2.8973
+        },
+        {
+            "atividade": "Conexão",
+            "qtdeUS": 2.012
+        },
+        {
+            "atividade": "Chave fusível / faca / repetidora (equipamento)",
+            "qtdeUS": 3.4029
+        },
+        {
+            "atividade": "Chave fusível / faca / repetidora (equipamento)",
+            "qtdeUS": 4.4149
+        },
+        {
+            "atividade": "Chave tripolar / regulador de tensão / religador / seccionalizador / unidades capacitativas / medição\r\nexterna ( equip.)",
+            "qtdeUS": 12.9325
+        },
+        {
+            "atividade": "Condutores de ligação do transformador / chaves à\r\nrede MT com protetor de bucha",
+            "qtdeUS": 6.1869
+        },
+        {
+            "atividade": "Chave By-Pass",
+            "qtdeUS": 4.8608
+        },
+        {
+            "atividade": "Esfera de sinalização com seccionamento do condutor",
+            "qtdeUS": 4.8288
+        },
+        {
+            "atividade": "Espaçador / separador",
+            "qtdeUS": 0.9447
+        },
+        {
+            "atividade": "Poste primário - LV",
+            "qtdeUS": 23.7269
+        },
+        {
+            "atividade": "Poste primário com equipamento - LV",
+            "qtdeUS": 29.9176
+        },
+        {
+            "atividade": "Utilização de dispositivo de elevação",
+            "qtdeUS": 5.1778
+        },
+        {
+            "atividade": "Manobras de chaves e equipamentos",
+            "qtdeUS": 0.8505
+        },
+        {
+            "atividade": "Cabo Armado",
+            "qtdeUS": 0.2182
+        },
+        {
+            "atividade": "Caixa derivação cliente ou caixa de blindagem barramento de trafo",
+            "qtdeUS": 1.8291
+        },
+        {
+            "atividade": "Caixa de blindagem da rede",
+            "qtdeUS": 3.5058
+        },
+        {
+            "atividade": "Ramal de ligação Concêntrico",
+            "qtdeUS": 0.7654
+        },
+        {
+            "atividade": "Mobilização  (LM/Equipes B2)",
+            "qtdeUS": 6.0938
+        },
+        {
+            "atividade": "Mobilização  (LM/Equipes B3)",
+            "qtdeUS": 8.0438
+        },
+        {
+            "atividade": "Mobilização  (LM/Equipes B4)",
+            "qtdeUS": 7.0688
+        },
+        {
+            "atividade": "Mobilização (LM/Equipes B2 Rural)",
+            "qtdeUS": 7.7391
+        },
+        {
+            "atividade": "Mobilização (LM/Equipes B3 Rural)",
+            "qtdeUS": 10.2156
+        },
+        {
+            "atividade": "Mobilização (LM/Equipes B4 Rural)",
+            "qtdeUS": 8.9774
+        },
+        {
+            "atividade": "Mobilização (LV/Equipes C)",
+            "qtdeUS": 5.2458
+        },
+        {
+            "atividade": "Sobreaviso - Equipe B2",
+            "qtdeUS": 0.3348
+        },
+        {
+            "atividade": "Sobreaviso - Equipe B3",
+            "qtdeUS": 0.5692
+        },
+        {
+            "atividade": "Sobreaviso - Equipe B4",
+            "qtdeUS": 0.4211
+        },
+        {
+            "atividade": "Sobreaviso - Equipe C1",
+            "qtdeUS": 0.3204
+        },
+        {
+            "atividade": "Sobreaviso - Equipe C4",
+            "qtdeUS": 0.2049
+        },
+        {
+            "atividade": "Equipe EMV – Utilização de Máquinas Equip. Veículos\r\nTerceiros",
+            "qtdeUS": 1.133
+        },
+        {
+            "atividade": "Construção e Manutenção FA",
+            "qtdeUS": 1.133
+        }
+    ]
+}

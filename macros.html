@@ -1,92 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Controle de Macros</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <title>
+        Macros
+    </title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
-<body>
 
-    <!-- TOPO -->
+<body onload="carregarMacros()">
 
-    <header class="macro-topbar">
+    <div class="container">
 
-        <a href="macros.html" class="logo-link">
+        <h1
+            onclick="voltarDashboard()"
+            class="titulo-click"
+        >
+            Macros Cadastradas
+        </h1>
 
-            <div class="logo-area">
+        <p>
+            Todas as macros salvas aparecerão abaixo.
+        </p>
 
-                <div class="logo-circle"></div>
+        <div class="menu-grid">
 
-                <div>
+            <a href="dashboard.html">
 
-                    <h1>Controle de Macros</h1>
+                <button class="btn btn-upload">
 
-                    <p>Painel operacional</p>
+                    Voltar Dashboard
 
-                </div>
+                </button>
 
-            </div>
-
-        </a>
-
-        <div class="top-buttons">
+            </a>
 
             <a href="nova-macro.html">
 
-                <button class="top-button">
-                    + Nova Macro
+                <button class="btn btn-upload">
+
+                    Nova Macro
+
                 </button>
 
             </a>
 
         </div>
 
-    </header>
-
-    <!-- CONTEÚDO -->
-
-    <section class="macro-page">
-
-        <div class="macro-list-container">
-
-            <div class="macro-list-header">
-
-                <div>
-
-                    <h2>Macros Atribuídas</h2>
-
-                    <p>
-                        Clique em uma macro para visualizar os detalhes.
-                    </p>
-
-                </div>
-
-                <span id="totalMacros">
-                    0 macros
-                </span>
-
-            </div>
-
-            <div id="listaMacros">
-
-            </div>
+        <div
+            id="listaMacros"
+            style="margin-top:30px;"
+        >
 
         </div>
 
-    </section>
+    </div>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>

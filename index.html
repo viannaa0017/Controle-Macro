@@ -1,56 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Controle de Obras</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <title>
+        Controle de Obras
+    </title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
+
 <body>
 
-    <!-- INTRODUÇÃO -->
+    <div class="container">
 
-    <section class="intro-section">
+        <h1
+            onclick="voltarDashboard()"
+            class="titulo-click"
+        >
+            Controle de Obras
+        </h1>
 
-        <div class="background-blur blur1"></div>
-        <div class="background-blur blur2"></div>
+        <p>
 
-        <div class="intro-card">
+            Sistema integrado para:
 
-            <span class="tag">
-                Sistema Profissional
-            </span>
+        </p>
 
-            <h1>
-                Controle Inteligente de Obras
-            </h1>
+        <ul style="margin-left:20px; margin-bottom:25px;">
 
-            <p>
-                Plataforma moderna para gerenciamento de macros,
-                equipes, produção diária e acompanhamento operacional.
-            </p>
+            <li>
+                Cadastro de macros
+            </li>
 
-            <a href="macros.html">
+            <li>
+                Gerenciamento de Excel
+            </li>
 
-                <button>
-                    Entrar no Controle de Macros
-                </button>
+            <li>
+                Controle operacional
+            </li>
 
-            </a>
+            <li>
+                Organização de equipes
+            </li>
 
-        </div>
+        </ul>
 
-    </section>
+        <a href="dashboard.html">
+
+            <button class="btn btn-upload">
+
+                Entrar no Sistema
+
+            </button>
+
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

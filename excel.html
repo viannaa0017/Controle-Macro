@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Excel
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1
+            onclick="voltarDashboard()"
+            class="titulo-click"
+        >
+            Banco Principal
+        </h1>
+
+        <div class="macro-card">
+
+            <h2>
+                Banco Principal de Atividades
+            </h2>
+
+            <input
+                type="file"
+                id="arquivoExcel"
+                accept=".xlsx,.xls"
+            >
+
+            <button
+                class="btn btn-upload"
+                onclick="enviarExcel()"
+            >
+
+                Enviar Excel
+
+            </button>
+
+        </div>
+
+        <div
+            class="macro-card"
+            style="margin-top:25px;"
+        >
+
+            <h2>
+                Abas Encontradas no Excel
+            </h2>
+
+            <div
+                id="listaExcel"
+                style="margin-top:20px;"
+            >
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
