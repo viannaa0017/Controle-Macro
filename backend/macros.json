@@ -1,57 +1,23 @@
 [
     {
-        "id": 1782913560890,
-        "numero": "HCF  VUYHB",
+        "id": 1783020200819,
+        "numero": "AM 3152154811",
         "equipe": "SRO5363 - ELEMAR RATKE",
-        "descricao": "NYUGBHGG ",
+        "descricao": "555411",
         "atividades": [
             {
-                "atividade": "Aprumar poste",
-                "qtdeUS": 2.9332
+                "atividade": "Aterramento de rede /equipamento",
+                "qtdeUS": 1.7469
             },
             {
-                "atividade": "Equipamentos (substituir)",
-                "qtdeUS": 2.5537
+                "atividade": "Desmatamento, aceiro, roçada, corte de bambú e árvores especiais s/ remoção",
+                "qtdeUS": 0.0238
             },
             {
-                "atividade": "Tracionar / encabeçar (mensageiro)",
-                "qtdeUS": 0.3176
+                "atividade": "Conjunto de iluminação pública completo",
+                "qtdeUS": 1.7469
             }
         ],
-        "totalUS": 5.8045
-    },
-    {
-        "id": 1782915294938,
-        "numero": "safasfs",
-        "equipe": "SRO5761 - ELOI DE MOURA",
-        "descricao": "dhdhdfh",
-        "atividades": [
-            {
-                "atividade": "Chave faca / fusível / repetidora",
-                "qtdeUS": 0.8893
-            }
-        ],
-        "totalUS": 0.8893
-    },
-    {
-        "id": 1782997923956,
-        "numero": "FHNSAUIFHASI BF",
-        "equipe": "SRO5761 - ELOI DE MOURA",
-        "descricao": "ASFASFAS",
-        "atividades": [
-            {
-                "atividade": "Estrutura para chave tripolar",
-                "qtdeUS": 4.086
-            },
-            {
-                "atividade": "Abertura de cava em solo rochoso",
-                "qtdeUS": 12.5
-            },
-            {
-                "atividade": "Conexão",
-                "qtdeUS": 0.9775
-            }
-        ],
-        "totalUS": 17.563499999999998
+        "totalUS": 3.5176
     }
 ]

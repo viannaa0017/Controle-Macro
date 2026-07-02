@@ -1,6 +1,6 @@
-const API = 'https://controle-macro-api.onrender.com';
+const API = 'https://controle-obras-api.onrender.com';
 
-/* ==============================S======= */
+/* ===================================== */
 /* VARIÁVEIS */
 /* ===================================== */
 
