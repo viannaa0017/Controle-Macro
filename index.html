@@ -24,52 +24,155 @@
 
 <body>
 
-    <div class="container">
+    <main class="container home-shell">
 
-        <h1
-            onclick="voltarDashboard()"
-            class="titulo-click"
-        >
-            Controle de Obras
-        </h1>
+        <section class="home-hero">
 
-        <p>
+            <div class="home-copy">
 
-            Sistema integrado para:
+                <span class="home-eyebrow">
+                    Gestão operacional
+                </span>
 
-        </p>
+                <h1>
+                    Controle de Obras
+                </h1>
 
-        <ul style="margin-left:20px; margin-bottom:25px;">
+                <p class="home-lead">
+                    Centralize macros, bases de Excel e rotinas de acompanhamento
+                    em um painel único para manter as equipes alinhadas.
+                </p>
 
-            <li>
-                Cadastro de macros
-            </li>
+                <div class="home-actions">
 
-            <li>
-                Gerenciamento de Excel
-            </li>
+                    <a href="dashboard.html">
 
-            <li>
-                Controle operacional
-            </li>
+                        <button class="btn btn-upload">
+                            Entrar no Sistema
+                        </button>
 
-            <li>
-                Organização de equipes
-            </li>
+                    </a>
 
-        </ul>
+                    <a
+                        href="excel.html"
+                        class="home-secondary-link"
+                    >
+                        Atualizar banco de Excel
+                    </a>
 
-        <a href="dashboard.html">
+                </div>
 
-            <button class="btn btn-upload">
+            </div>
 
-                Entrar no Sistema
+            <div
+                class="home-panel"
+                aria-label="Resumo do sistema"
+            >
 
-            </button>
+                <div class="home-status">
 
-        </a>
+                    <span></span>
 
-    </div>
+                    Operação organizada
+
+                </div>
+
+                <div class="home-metric">
+
+                    <strong>
+                        4
+                    </strong>
+
+                    <span>
+                        áreas integradas
+                    </span>
+
+                </div>
+
+                <div class="home-checklist">
+
+                    <p>
+                        Fluxos disponíveis
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Cadastro e consulta de macros
+                        </li>
+
+                        <li>
+                            Upload do banco principal
+                        </li>
+
+                        <li>
+                            Controle de atividades por equipe
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="home-shortcuts">
+
+            <a
+                href="macros.html"
+                class="shortcut-card"
+            >
+                <span>
+                    01
+                </span>
+
+                <strong>
+                    Macros
+                </strong>
+
+                <p>
+                    Consulte os modelos cadastrados para padronizar a execução.
+                </p>
+            </a>
+
+            <a
+                href="nova-macro.html"
+                class="shortcut-card"
+            >
+                <span>
+                    02
+                </span>
+
+                <strong>
+                    Nova Macro
+                </strong>
+
+                <p>
+                    Crie combinações de atividades a partir da base disponível.
+                </p>
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="shortcut-card"
+            >
+                <span>
+                    03
+                </span>
+
+                <strong>
+                    Painel
+                </strong>
+
+                <p>
+                    Acesse rapidamente as principais rotinas do sistema.
+                </p>
+            </a>
+
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 
