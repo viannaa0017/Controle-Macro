@@ -695,6 +695,87 @@ async function excluirMacro(id) {
 }
 
 /* ===================================== */
+/* LOGIN */
+/* ===================================== */
+
+async function fazerLogin() {
+
+    const usuario =
+        document.getElementById("usuario").value.trim();
+
+    const senha =
+        document.getElementById("senha").value.trim();
+
+    if (!usuario || !senha) {
+
+        alert("Preencha usuário e senha.");
+
+        return;
+
+    }
+
+    try {
+
+        const resposta = await fetch(
+
+            `${API}/login`,
+
+            {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json"
+
+                },
+
+                body: JSON.stringify({
+
+                    usuario,
+
+                    senha
+
+                })
+
+            }
+
+        );
+
+        const dados = await resposta.json();
+
+        if (!dados.sucesso) {
+
+            alert(dados.mensagem);
+
+            return;
+
+        }
+
+        sessionStorage.setItem(
+            "usuario",
+            dados.usuario
+        );
+
+        sessionStorage.setItem(
+            "perfil",
+            dados.perfil
+        );
+
+        window.location.href =
+            "dashboard.html";
+
+    } catch (erro) {
+
+        console.error(erro);
+
+        alert("Erro ao conectar com o servidor.");
+
+    }
+
+}
+
+/* ===================================== */
 /* INICIALIZAÇÃO */
 /* ===================================== */
 

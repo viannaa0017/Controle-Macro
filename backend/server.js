@@ -16,6 +16,8 @@ const multer =
 const XLSX =
     require('xlsx');
 
+const usuariosPath = path.join(__dirname, 'usuarios.json');
+
 /* ===================================== */
 /* APP */
 /* ===================================== */
@@ -625,6 +627,80 @@ app.delete(
 
     }
 );
+
+/* ===================================== */
+/* LOGIN */
+/* ===================================== */
+
+app.post('/login', (req, res) => {
+
+    try {
+
+        const { usuario, senha } = req.body;
+
+        if (!fs.existsSync(usuariosPath)) {
+
+            return res.status(500).json({
+
+                sucesso: false,
+
+                mensagem: 'Arquivo usuarios.json não encontrado.'
+
+            });
+
+        }
+
+        const usuarios = lerJSON(usuariosPath);
+
+        const usuarioEncontrado = usuarios.find((u) => {
+
+            return (
+
+                u.usuario === usuario &&
+
+                u.senha === senha
+
+            );
+
+        });
+
+        if (!usuarioEncontrado) {
+
+            return res.status(401).json({
+
+                sucesso: false,
+
+                mensagem: 'Usuário ou senha inválidos.'
+
+            });
+
+        }
+
+        res.json({
+
+            sucesso: true,
+
+            usuario: usuarioEncontrado.usuario,
+
+            perfil: usuarioEncontrado.perfil
+
+        });
+
+    } catch (erro) {
+
+        console.log(erro);
+
+        res.status(500).json({
+
+            sucesso: false,
+
+            mensagem: 'Erro ao realizar login.'
+
+        });
+
+    }
+
+});
 
 /* ===================================== */
 /* PORTA */
