@@ -781,6 +781,8 @@ async function fazerLogin() {
 
 window.onload = () => {
 
+    carregarDashboard();
+
     carregarExcelLido();
 
     carregarSelectAtividades();
@@ -797,5 +799,42 @@ function voltarDashboard() {
 
     window.location.href =
         'dashboard.html';
+
+}
+
+/* ===================================== */
+/* DASHBOARD */
+/* ===================================== */
+
+async function carregarDashboard() {
+
+    if (!document.getElementById("totalMacros"))
+        return;
+
+    try {
+
+        const resposta =
+            await fetch(`${API}/dashboard`);
+
+        const dados =
+            await resposta.json();
+
+        document.getElementById("totalMacros").innerText =
+            dados.totalMacros;
+
+        document.getElementById("totalAtividades").innerText =
+            dados.totalAtividades;
+
+        document.getElementById("totalUsuarios").innerText =
+            dados.totalUsuarios;
+
+        document.getElementById("totalUSDashboard").innerText =
+            Number(dados.totalUS).toFixed(2);
+
+    } catch (erro) {
+
+        console.log(erro);
+
+    }
 
 }

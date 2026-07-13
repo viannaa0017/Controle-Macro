@@ -1,49 +1,19 @@
 [
     {
-        "id": 1783514449321,
-        "numero": "AM 3152369852",
-        "equipe": "SRO5838 - WAGNER ANTUNES",
-        "descricao": "111210",
+        "id": 1783953238644,
+        "numero": "AM 31358879",
+        "equipe": "SRO5761 - ELOI DE MOURA",
+        "descricao": "514511051",
         "atividades": [
             {
-                "atividade": "Poste",
-                "qtdeUS": 3.8633
+                "atividade": "Estrutura para chave tripolar",
+                "qtdeUS": 4.086
             },
             {
-                "atividade": "Caixa de blindagem da rede",
-                "qtdeUS": 2.1138
+                "atividade": "Aterramento de cerca ( somente seccionar)",
+                "qtdeUS": 0.3967
             }
         ],
-        "totalUS": 5.9771
-    },
-    {
-        "id": 1783514621480,
-        "numero": "AM 7848451574",
-        "equipe": "SRO6252 - ALEXANDRE ANCEROWICZ",
-        "descricao": "NÃO",
-        "atividades": [
-            {
-                "atividade": "Para-raios",
-                "qtdeUS": 2.1995
-            },
-            {
-                "atividade": "Estai",
-                "qtdeUS": 1.4663
-            }
-        ],
-        "totalUS": 3.6658
-    },
-    {
-        "id": 1783516907892,
-        "numero": "FASFAS",
-        "equipe": "SRO5823 - JOÃO DURÃO",
-        "descricao": "45151",
-        "atividades": [
-            {
-                "atividade": "Aterramento de rede /equipamento",
-                "qtdeUS": 1.7469
-            }
-        ],
-        "totalUS": 1.7469
+        "totalUS": 4.4827
     }
 ]

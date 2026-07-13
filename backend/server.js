@@ -18,6 +18,8 @@ const XLSX =
 
 const usuariosPath = path.join(__dirname, 'usuarios.json');
 
+const API = 'https://controle-macro-api.onrender.com';
+
 /* ===================================== */
 /* APP */
 /* ===================================== */
@@ -710,4 +712,60 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
+});
+
+/* ===================================== */
+/* DASHBOARD */
+/* ===================================== */
+
+app.get('/dashboard', (req, res) => {
+
+    try {
+
+        const macros = lerJSON(macrosPath);
+
+        const excel = lerJSON(excelLidoPath);
+
+        const usuarios = lerJSON(usuariosPath);
+
+        let totalAtividades = 0;
+
+        Object.keys(excel).forEach(aba => {
+
+            totalAtividades += excel[aba].length;
+
+        });
+
+        let totalUS = 0;
+
+        macros.forEach(macro => {
+
+            totalUS += Number(macro.totalUS || 0);
+
+        });
+
+        res.json({
+
+            totalMacros: macros.length,
+
+            totalUsuarios: usuarios.length,
+
+            totalAtividades,
+
+            totalUS
+
+        });
+
+    } catch (erro) {
+
+        console.log(erro);
+
+        res.status(500).json({
+
+            erro: "Erro ao carregar dashboard."
+
+        });
+
+    }
+
 });

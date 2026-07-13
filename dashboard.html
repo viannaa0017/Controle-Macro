@@ -26,54 +26,53 @@
 
     <div class="container">
 
-        <h1
-            onclick="voltarDashboard()"
-            class="titulo-click"
-        >
-            Painel Principal
-        </h1>
+    <h1 onclick="voltarDashboard()" class="titulo-click">
+        Painel Principal
+    </h1>
 
-        <p>
+    <p>Resumo do sistema</p>
 
-            Escolha uma opção abaixo:
+    <div class="menu-grid">
 
-        </p>
+        <div class="macro-card">
+            <h2>Macros</h2>
+            <h1 id="totalMacros">0</h1>
+        </div>
 
-        <div class="menu-grid">
+        <div class="macro-card">
+            <h2>Atividades</h2>
+            <h1 id="totalAtividades">0</h1>
+        </div>
 
-            <a href="macros.html">
+        <div class="macro-card">
+            <h2>Usuários</h2>
+            <h1 id="totalUsuarios">0</h1>
+        </div>
 
-                <button class="btn btn-upload">
-
-                    Ver Macros
-
-                </button>
-
-            </a>
-
-            <a href="nova-macro.html">
-
-                <button class="btn btn-upload">
-
-                    Nova Macro
-
-                </button>
-
-            </a>
-
-            <a href="excel.html">
-
-                <button class="btn btn-upload">
-
-                    Banco de Excel
-
-                </button>
-
-            </a>
-
+        <div class="macro-card">
+            <h2>Total US</h2>
+            <h1 id="totalUSDashboard">0</h1>
         </div>
 
     </div>
+
+    <div class="menu-grid" style="margin-top:40px;">
+
+        <a href="macros.html">
+            <button class="btn btn-upload">Ver Macros</button>
+        </a>
+
+        <a href="nova-macro.html">
+            <button class="btn btn-upload">Nova Macro</button>
+        </a>
+
+        <a href="excel.html">
+            <button class="btn btn-upload">Banco Principal</button>
+        </a>
+
+    </div>
+
+</div>
 
     <script src="script.js"></script>
 
