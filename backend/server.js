@@ -18,7 +18,7 @@ const XLSX =
 
 const usuariosPath = path.join(__dirname, 'usuarios.json');
 
-const API = 'https://controle-macro-api.onrender.com';
+const API = 'https://controle-macro-api.onrender.com/';
 
 /* ===================================== */
 /* APP */

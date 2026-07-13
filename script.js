@@ -781,13 +781,17 @@ async function fazerLogin() {
 
 window.onload = () => {
 
+    carregarDashboard();
+
     carregarExcelLido();
 
     carregarSelectAtividades();
 
-    carregarMacros();
+    mostrarUsuario();
 
-    carregarDashboard();
+    verificarLogin();
+
+    carregarMacros();
 
     verificarPermissaoGestor();
 
@@ -858,5 +862,55 @@ async function carregarDashboard() {
         totalUS.toFixed(2);
 
     document.getElementById("totalUsuarios").innerText = 2;
+
+}
+
+/* ===================================== */
+/* VERIFICAR LOGIN */
+/* ===================================== */
+
+function verificarLogin() {
+
+    const usuario = sessionStorage.getItem("usuario");
+
+    if (!usuario) {
+
+        window.location.href = "login.html";
+
+    }
+
+}
+
+/* ===================================== */
+/* PEGAR PERFIL */
+/* ===================================== */
+
+function getPerfil() {
+
+    return sessionStorage.getItem("perfil");
+
+}
+
+function mostrarUsuario() {
+
+    const usuario = sessionStorage.getItem("usuario");
+
+    const perfil = sessionStorage.getItem("perfil");
+
+    const nome = document.getElementById("nomeUsuario");
+
+    const tipo = document.getElementById("perfilUsuario");
+
+    if (nome) {
+
+        nome.innerHTML = "Usuário: " + usuario;
+
+    }
+
+    if (tipo) {
+
+        tipo.innerHTML = "Perfil: " + perfil;
+
+    }
 
 }
