@@ -781,13 +781,15 @@ async function fazerLogin() {
 
 window.onload = () => {
 
-    carregarDashboard();
-
     carregarExcelLido();
 
     carregarSelectAtividades();
 
     carregarMacros();
+
+    carregarDashboard();
+
+    verificarPermissaoGestor();
 
 };
 
@@ -802,39 +804,59 @@ function voltarDashboard() {
 
 }
 
+function verificarPermissaoGestor() {
+
+    const perfil =
+        sessionStorage.getItem("perfil");
+
+    const botao =
+        document.getElementById("btnUsuarios");
+
+    if (!botao) return;
+
+    if (perfil === "gestor") {
+
+        botao.style.display = "block";
+
+    } else {
+
+        botao.style.display = "none";
+
+    }
+
+}
+
 /* ===================================== */
 /* DASHBOARD */
 /* ===================================== */
 
 async function carregarDashboard() {
 
-    if (!document.getElementById("totalMacros"))
-        return;
+    const resposta = await fetch(`${API}/macros`);
 
-    try {
+    const macros = await resposta.json();
 
-        const resposta =
-            await fetch(`${API}/dashboard`);
+    let totalMacros = macros.length;
 
-        const dados =
-            await resposta.json();
+    let totalUS = 0;
 
-        document.getElementById("totalMacros").innerText =
-            dados.totalMacros;
+    let totalAtividades = 0;
 
-        document.getElementById("totalAtividades").innerText =
-            dados.totalAtividades;
+    macros.forEach(macro => {
 
-        document.getElementById("totalUsuarios").innerText =
-            dados.totalUsuarios;
+        totalUS += Number(macro.totalUS || 0);
 
-        document.getElementById("totalUSDashboard").innerText =
-            Number(dados.totalUS).toFixed(2);
+        totalAtividades += macro.atividades.length;
 
-    } catch (erro) {
+    });
 
-        console.log(erro);
+    document.getElementById("totalMacros").innerText = totalMacros;
 
-    }
+    document.getElementById("totalAtividades").innerText = totalAtividades;
+
+    document.getElementById("totalUSDashboard").innerText =
+        totalUS.toFixed(2);
+
+    document.getElementById("totalUsuarios").innerText = 2;
 
 }

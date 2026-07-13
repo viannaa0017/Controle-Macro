@@ -705,6 +705,134 @@ app.post('/login', (req, res) => {
 });
 
 /* ===================================== */
+/* LISTAR USUÁRIOS */
+/* ===================================== */
+
+app.get('/usuarios', (req, res) => {
+
+    try {
+
+        const usuarios = lerJSON(usuariosPath);
+
+        res.json(usuarios);
+
+    } catch (erro) {
+
+        console.log(erro);
+
+        res.status(500).json({
+
+            sucesso: false,
+
+            mensagem: 'Erro ao listar usuários.'
+
+        });
+
+    }
+
+});
+
+/* ===================================== */
+/* CRIAR USUÁRIO */
+/* ===================================== */
+
+app.post('/usuarios', (req, res) => {
+
+    try {
+
+        const { usuario, senha, perfil } = req.body;
+
+        const usuarios = lerJSON(usuariosPath);
+
+        const existe = usuarios.find(u => u.usuario === usuario);
+
+        if (existe) {
+
+            return res.status(400).json({
+
+                sucesso: false,
+
+                mensagem: 'Usuário já existe.'
+
+            });
+
+        }
+
+        usuarios.push({
+
+            id: Date.now(),
+
+            usuario,
+
+            senha,
+
+            perfil
+
+        });
+
+        salvarJSON(usuariosPath, usuarios);
+
+        res.json({
+
+            sucesso: true
+
+        });
+
+    } catch (erro) {
+
+        console.log(erro);
+
+        res.status(500).json({
+
+            sucesso: false,
+
+            mensagem: 'Erro ao criar usuário.'
+
+        });
+
+    }
+
+});
+
+/* ===================================== */
+/* EXCLUIR USUÁRIO */
+/* ===================================== */
+
+app.delete('/usuarios/:id', (req, res) => {
+
+    try {
+
+        const id = Number(req.params.id);
+
+        let usuarios = lerJSON(usuariosPath);
+
+        usuarios = usuarios.filter(u => u.id !== id);
+
+        salvarJSON(usuariosPath, usuarios);
+
+        res.json({
+
+            sucesso: true
+
+        });
+
+    } catch (erro) {
+
+        console.log(erro);
+
+        res.status(500).json({
+
+            sucesso: false,
+
+            mensagem: 'Erro ao excluir usuário.'
+
+        });
+
+    }
+
+});
+
+/* ===================================== */
 /* PORTA */
 /* ===================================== */
 

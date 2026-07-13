@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gerenciar Usuários</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="titulo-click"
+        onclick="voltarDashboard()">
+
+        Gerenciamento de Usuários
+
+    </h1>
+
+    <p>
+
+        Apenas usuários com perfil Gestor podem acessar esta página.
+
+    </p>
+
+    <div class="macro-card">
+
+        <h2>Novo Usuário</h2>
+
+        <label>Usuário</label>
+
+        <input
+            type="text"
+            id="novoUsuario">
+
+        <label>Senha</label>
+
+        <input
+            type="password"
+            id="novaSenha">
+
+        <label>Perfil</label>
+
+        <select id="novoPerfil">
+
+            <option value="auxiliar">
+                Auxiliar
+            </option>
+
+            <option value="gestor">
+                Gestor
+            </option>
+
+        </select>
+
+        <button
+            class="btn btn-upload"
+            onclick="criarUsuario()">
+
+            Criar Usuário
+
+        </button>
+
+    </div>
+
+    <div
+        id="listaUsuarios"
+        style="margin-top:30px;">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
