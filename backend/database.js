@@ -1,83 +1,115 @@
 const sqlite3 = require('sqlite3').verbose();
-
 const path = require('path');
 
 /* ===================================== */
-/* BANCO SQLITE */
+/* CONEXÃO COM O SQLITE */
 /* ===================================== */
 
-const dbPath = path.join(
-    __dirname,
-    'database.db'
-);
-
 const db = new sqlite3.Database(
-
-    dbPath,
-
+    path.join(__dirname, 'database.db'),
     (err) => {
 
         if (err) {
 
-            console.log(
-                'Erro ao conectar banco:',
-                err.message
-            );
+            console.error('Erro ao conectar ao banco:', err.message);
 
         } else {
 
-            console.log(
-                'Banco SQLite conectado'
-            );
+            console.log('Banco SQLite conectado com sucesso.');
 
         }
 
     }
-
 );
 
 /* ===================================== */
-/* TABELA EXCEL */
+/* TABELA DE USUÁRIOS */
 /* ===================================== */
 
 db.run(`
 
-    CREATE TABLE IF NOT EXISTS excel_files (
+CREATE TABLE IF NOT EXISTS usuarios (
 
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
 
-        nome TEXT NOT NULL,
+    usuario TEXT UNIQUE NOT NULL,
 
-        arquivo TEXT NOT NULL,
+    senha TEXT NOT NULL,
 
-        criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+    perfil TEXT NOT NULL,
 
-    )
+    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+
+)
 
 `);
 
 /* ===================================== */
-/* TABELA MACROS */
+/* TABELA DE MACROS */
 /* ===================================== */
 
 db.run(`
 
-    CREATE TABLE IF NOT EXISTS macros (
+CREATE TABLE IF NOT EXISTS macros (
 
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
 
-        numero TEXT NOT NULL,
+    numero TEXT NOT NULL,
 
-        equipe TEXT NOT NULL,
+    equipe TEXT NOT NULL,
 
-        descricao TEXT NOT NULL,
+    descricao TEXT,
 
-        criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+    total_us REAL DEFAULT 0,
 
-    )
+    criado_por TEXT,
+
+    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+
+)
 
 `);
 
 /* ===================================== */
+/* TABELA DE ATIVIDADES */
+/* ===================================== */
+
+db.run(`
+
+CREATE TABLE IF NOT EXISTS atividades (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    atividade TEXT NOT NULL,
+
+    qtde_us REAL,
+
+    aba TEXT
+
+)
+
+`);
+
+/* ===================================== */
+/* LIGAÇÃO ENTRE MACROS E ATIVIDADES */
+/* ===================================== */
+
+db.run(`
+
+CREATE TABLE IF NOT EXISTS macro_atividades (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    macro_id INTEGER NOT NULL,
+
+    atividade_id INTEGER NOT NULL,
+
+    FOREIGN KEY (macro_id) REFERENCES macros(id),
+
+    FOREIGN KEY (atividade_id) REFERENCES atividades(id)
+
+)
+
+`);
 
 module.exports = db;
